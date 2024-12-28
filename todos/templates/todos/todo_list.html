@@ -1,0 +1,12 @@
+{% extends "todos/base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Your To-Do List</h2>
+    <form id="add-todo-form">
+        <input type="text" id="todo-title" placeholder="New Task" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list"></ul>
+</div>
+{% endblock %}
